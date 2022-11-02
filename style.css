@@ -163,6 +163,7 @@ header section.main section.one .text {
     flex-direction: column;
     justify-content: space-around;
     align-items: flex-start;
+    margin-bottom: 15px;
 }
 header section.main section.one .text h3 {
     color: var(--green);
@@ -175,6 +176,11 @@ header section.main section.one .text button {
     background-color: var(--black);
     color: #fff;
     border-radius: 5px;
+}
+header section.main section.one .text button:hover {
+    background-color: var(--green);
+    color: var(--black);
+    font-weight: 600;
 }
 header section.main section.one .pics {
     width: 100%;
@@ -327,6 +333,15 @@ main section.dishes .dish section .item-2 .section-2 button {
     color: #fff;
     border-radius: 5px;
 }
+main section.dishes .dish section .item-2 .section-2 button:hover {
+    background-color: var(--green);
+    color: var(--black);
+    font-weight: 600;
+}
+main section.about{
+    width: 100%;
+    height: auto;
+}
 main section.about .headers {
     background-color: #fff;
 }
@@ -344,6 +359,140 @@ main section.about .content .txt {
 main section.about .content .txt h1 {
     font-size: 1.8rem;
 }
+main section.about .content .txt p {
+    font-size: .9rem;
+}
+main section.about .content .txt #txt-p {
+    margin-top: 10px;
+    margin-bottom: 20px;
+}
+main section.about .content .txt .grid {
+    width: calc(100% - 20px);
+    min-width: 223px;
+    height: 140px;
+    margin-bottom: 10px;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: repeat(2, 1fr);
+    grid-gap: 10px;
+}
+main section.about .content .txt .grid .item {
+    border: 3px solid var(--normal);
+    background-color: var(--normal);
+    border-radius: 5px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: .9rem;
+    color: rgba(29, 28, 28, 0.926);
+    cursor: pointer;
+}
+main section.about .content .txt .grid .item-3 {
+    grid-column: span 2;
+}
+main section.about .content .txt .grid .item i {
+    color: var(--green);
+    font-size: 1.2rem;
+    margin-right: .5vw;
+}
+main section.about .content .txt button {
+    padding: 11px 40px;
+    background-color: var(--black);
+    color: #fff;
+    border-radius: 5px;
+    margin-bottom: 10px;
+}
+main section.about .content .txt button:hover {
+    background-color: var(--green);
+    color: var(--black);
+    font-weight: 600;
+}
+main section.menu {
+    width: 100%;
+    height: auto;
+    background-color: var(--normal);
+}
+main section.menu .captions {
+    width: 85%;
+    min-height: 400px;
+    margin: 0 auto;
+    background-color: #fff;
+    border-radius: 5px;
+    box-shadow: var(--box-shadow);
+    padding: 20px;
+    position: relative;
+    margin-top: 10px;
+    margin-bottom: 60px;
+}
+main section.menu .captions .hover {
+    position: absolute;
+    width: 85%;
+    height: 30%;
+    padding: 10px;
+}
+main section.menu .captions .hover a {
+    padding: 10px;
+    border-radius: 50%;
+    background-color: #fff;
+    color: var(--black);
+    float: right;
+    transition: .75s;
+}
+main section.menu .captions .item-1{
+    width: 100%;
+    height: 60%;
+    margin-bottom: 10px;
+}
+main section.menu .captions .item-1 img{
+    width: 100%;
+    height: 100%;
+    border-radius: 5px;
+}
+main section.menu .captions .item-2 {
+    height: 40%;
+    display: flex;
+    justify-content: space-around;
+    align-items: flex-start;
+    flex-direction: column;
+}
+main section.menu .captions .item-2 .section-1 {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    flex-direction: column;
+    min-height: 70%;
+}
+main section.menu .captions .item-2 .section-1 i {
+    color: var(--green);
+}
+main section.menu .captions .item-2 .section-1 h1 {
+    font-size: 1.5rem;
+}
+main section.menu .captions .item-2 .section-2 {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 90%;
+    height: 30%;
+}
+main section.menu .captions .item-2 .section-2 h3 {
+    color: var(--green);
+}
+main section.menu .captions .item-2 .section-2 button {
+    padding: 11px 30px;
+    background-color: var(--black);
+    color: #fff;
+    border-radius: 5px;
+}
+
+
+
+
+
+
+
+
+
 
 
 
