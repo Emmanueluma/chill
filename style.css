@@ -411,6 +411,7 @@ main section.menu {
     width: 100%;
     height: auto;
     background-color: var(--normal);
+    padding-bottom: 10px;
 }
 main section.menu .captions {
     width: 85%;
@@ -422,7 +423,7 @@ main section.menu .captions {
     padding: 20px;
     position: relative;
     margin-top: 10px;
-    margin-bottom: 60px;
+    margin-bottom: 10px;
 }
 main section.menu .captions .hover {
     position: absolute;
@@ -431,12 +432,13 @@ main section.menu .captions .hover {
     padding: 10px;
 }
 main section.menu .captions .hover a {
-    padding: 10px;
+    padding: 5vw;
     border-radius: 50%;
     background-color: #fff;
     color: var(--black);
     float: right;
     transition: .75s;
+    font-size: 1.2rem;
 }
 main section.menu .captions .item-1{
     width: 100%;
@@ -484,12 +486,88 @@ main section.menu .captions .item-2 .section-2 button {
     color: #fff;
     border-radius: 5px;
 }
-
-
-
-
-
-
+main section.reviews {
+    height: 100vh;
+    background-color: #fff;
+}
+main section.reviews .container {
+    width: 98%;
+    height: 60%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: transparent;
+    margin: 0 auto;
+}
+main section.reviews .container div.re {
+    height: 80%;
+    background-color: transparent;
+}
+main section.reviews .container div.item-1, main section.reviews .container div.item-3 {
+    width: 9%;
+}
+main section.reviews .container div.item-2 {
+    width: 80%;
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    overflow-x: scroll;
+    overflow-y: hidden;
+    background-color: transparent;
+}
+main section.reviews .container div.item-2 .text {
+    border: 2px solid  var(--normal);
+    border-radius: 10px;
+    height: 100%;
+    min-width: 100%;
+    margin-left: 10px;
+    padding: 2%;
+    display: grid;
+    grid-template-columns: 75% 25%;
+    grid-template-rows: repeat(2, 50%);
+}
+main section.reviews .container div.item-2 .one {
+    margin-left: 0;
+}
+main section.reviews .container div.item-2 .text div.only {
+    grid-column: span 3;
+}
+main section.reviews .container div.item-2 .text div.pics {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+main section.reviews .container div.item-2 .text div.pics div {
+    width: 50%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+main section.reviews .container div.item-2 .text div.pics div.one img{
+    width: 20vw;
+    height: 20vw;
+    border-radius: 50%;
+}
+main section.reviews .container div.item-2 .text div.pics div.two {
+    align-items: flex-start;
+    flex-direction: column;
+}
+main section.reviews .container div.item-2 .text div.pics div.two section {
+    color: var(--green);
+}
+main section.reviews .container div.item-2 .sign {
+    display: flex;
+    justify-content: flex-end;
+    align-items: flex-start;
+}
+main section.reviews .container div.item-2 .sign p {
+    font-size: 20vw;
+    color: #5751517c;
+}
+main section.reviews .container div.item-2 .text div.only p {
+    font-size: .9rem;
+}
 
 
 
