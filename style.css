@@ -487,12 +487,13 @@ main section.menu .captions .item-2 .section-2 button {
     border-radius: 5px;
 }
 main section.reviews {
-    height: 100vh;
+    height: auto;
+    margin-bottom: 100px;
     background-color: #fff;
 }
 main section.reviews .container {
     width: 98%;
-    height: 60%;
+    height: 430px;
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -502,9 +503,30 @@ main section.reviews .container {
 main section.reviews .container div.re {
     height: 80%;
     background-color: transparent;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 main section.reviews .container div.item-1, main section.reviews .container div.item-3 {
     width: 9%;
+    background-color: transparent;
+    font-size: 2rem;
+    color: var(--green);
+    animation: dim .8s linear infinite ;
+}
+@keyframes dim {
+    0%{
+        opacity: 0;
+    }
+    25%{
+        opacity: .3;
+    }
+    75%{
+        opacity: .7;
+    }
+    100%{
+        opacity: .1;
+    }
 }
 main section.reviews .container div.item-2 {
     width: 80%;
@@ -556,6 +578,9 @@ main section.reviews .container div.item-2 .text div.pics div.two {
 main section.reviews .container div.item-2 .text div.pics div.two section {
     color: var(--green);
 }
+main section.reviews .container div.item-2 .text div.pics div.two section i {
+    font-size: .9rem;
+}
 main section.reviews .container div.item-2 .sign {
     display: flex;
     justify-content: flex-end;
@@ -568,10 +593,47 @@ main section.reviews .container div.item-2 .sign p {
 main section.reviews .container div.item-2 .text div.only p {
     font-size: .9rem;
 }
-
-
-
-
+main section.order {
+    background-color: var(--normal);
+    width: 100%;
+}
+main section.order form{
+    width: 90%;
+    padding: 2vw;
+    height: auto;
+    margin: 0 auto;
+    background-color: #fff;
+    border-radius: 5px;
+    box-shadow: var(--box-shadow);
+}
+main section.order form input {
+    width: 100%;
+    background-color: var(--normal);
+    height: 30px;
+    padding: 5px;
+    border-radius: 5px;
+}
+main section.order form textarea {
+    width: 100%;
+    background-color: var(--normal);
+    border-radius: 5px;
+}
+main section.order form button {
+    padding: 11px 40px;
+    background-color: var(--black);
+    color: #fff;
+    border-radius: 5px;
+}
+main section.order form button:hover {
+    background-color: var(--green);
+    color: var(--black);
+    font-weight: 600;
+}
+footer {
+    background-color: var(--normal);
+    width: 100vw;
+    height: 100vh;
+}
 
 
 

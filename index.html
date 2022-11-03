@@ -18,12 +18,12 @@
             <h2><i class="fas fa-utensils"></i>resto.</h2>
             <nav>
                 <ul>
-                    <li><a href="#">home</a></li>
-                    <li><a href="#">dishes</a></li>
-                    <li><a href="#">about</a></li>
-                    <li><a href="#">menu</a></li>
-                    <li><a href="#">reviews</a></li>
-                    <li><a href="#">order</a></li>
+                    <li><a href="#main">home</a></li>
+                    <li><a href="#dishes">dishes</a></li>
+                    <li><a href="#about">about</a></li>
+                    <li><a href="#menu">menu</a></li>
+                    <li><a href="#reviews">reviews</a></li>
+                    <li><a href="#order">order</a></li>
                 </ul>
             </nav>
             <div class="icons" id="iconsHouse">
@@ -36,12 +36,12 @@
         <div class="stuff">
             <div class="menu" id="minMenu">
                 <ul>
-                    <li><a href="#" class="link">home</a></li>
-                    <li><a href="#" class="link">dishes</a></li>
-                    <li><a href="#" class="link">about</a></li>
-                    <li><a href="#" class="link">menu</a></li>
-                    <li><a href="#" class="link">reviews</a></li>
-                    <li><a href="#" class="link">order</a></li>
+                    <li><a href="#main" class="link">home</a></li>
+                    <li><a href="#dishes" class="link">dishes</a></li>
+                    <li><a href="#about" class="link">about</a></li>
+                    <li><a href="#menu" class="link">menu</a></li>
+                    <li><a href="#reviews" class="link">reviews</a></li>
+                    <li><a href="#order" class="link">order</a></li>
                 </ul>
             </div>
             <form action="#" id="form" method="get">
@@ -579,7 +579,7 @@
                 </section>
             </div>
         </section>
-        <section class="reviews">
+        <section class="reviews" id="reviews">
             <div class="headers">
                 <h3>customer's reviews</h3>
                 <h2>what they say</h2>
@@ -620,7 +620,7 @@
                     <div class="text two">
                         <div class="pics">
                             <div class="one">
-                                <img src="images/pic-1.png" alt="">
+                                <img src="images/pic-2.png" alt="">
                             </div>
                             <div class="two">
                                 <h1>john doe</h1>
@@ -648,7 +648,35 @@
                     <div class="text three">
                         <div class="pics">
                             <div class="one">
-                                <img src="images/pic-1.png" alt="">
+                                <img src="images/pic-3.png" alt="">
+                            </div>
+                            <div class="two">
+                                <h1>john doe</h1>
+                                <section>
+                                    <i class="fa-solid fa-star"></i>
+                                    <i class="fa-solid fa-star"></i>
+                                    <i class="fa-solid fa-star"></i>
+                                    <i class="fa-solid fa-star"></i>
+                                    <i class="fa-solid fa-star-half-stroke"></i>
+                                </section>
+                            </div>
+                        </div>
+                        <div class="sign">
+                            <p class="fas fa-quote-right"></p>
+                        </div>
+                        <div class="only">
+                            <p>
+                                Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                                Odio ad sunt perspiciatis voluptate omnis quibusdam beatae,
+                                veniam laudantium impedit quod repellat tempore exercitationem perferendis, 
+                                alias voluptas amet sit suscipit natus. 
+                            </p>
+                        </div>
+                    </div>
+                    <div class="text three">
+                        <div class="pics">
+                            <div class="one">
+                                <img src="images/pic-4.png" alt="">
                             </div>
                             <div class="two">
                                 <h1>john doe</h1>
@@ -679,8 +707,47 @@
                 </div>
             </div>
         </section>
+        <section class="order">
+            <div class="headers">
+                <h3>order now</h3>
+                <h2>free and fast</h2>
+            </div>
+            <form action="#" method="get">
+                <label for="name">your name</label> <br>
+                <input type="text" id="name" name="name" placeholder="enter your name" required> <br>
+
+                <label for="phonenumber">your number</label> <br>
+                <input type="tel" id="phonenumber" name="phonenumber" min="11" max="11" placeholder="enter your number" required> <br>
+
+                <label for="order">your order</label> <br>
+                <input type="text" id="order" name="order" placeholder="enter food name" required> <br>
+
+                <label for="additionalFood">additional food</label> <br>
+                <input type="text" id="additionalFood" name="additionalFood" placeholder="extra food name" required> <br>
+
+                <label for="price">how much</label> <br>
+                <input type="text" id="price" name="price" placeholder="how many order" required> <br>
+
+                <label for="dateAndTime">date and time</label> <br>
+                <input type="text" id="dateAndTime" name="dateAndTime" placeholder="dd-mm-yyyy --:--" required> <br>
+
+                <label for="address">your address</label> <br>
+                <textarea name="address" id="" cols="30" rows="10"></textarea> <br>
+
+                <label for="message">your message</label> <br>
+                <textarea name="message" id="" cols="30" rows="10"></textarea> <br>
+
+                <button type="submit">order now</button>
+            </form>
+        </section>
     </main>
-    <footer></footer>
+    <footer>
+        <section class="main">
+            <div class="item item_1"></div>
+            <div class="item item_2"></div>
+            <div class="item item_3"></div>
+        </section>
+    </footer>
 
     <script src="brain.js"></script>
 </body>
