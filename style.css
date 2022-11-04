@@ -100,6 +100,8 @@ header .stuff .menu ul li:hover {
 header .stuff .menu ul li a {
     display: none;
     color: var(--black);
+    width: 100%;
+    height: 50%;
 }
 header .stuff form {
     position: fixed;
@@ -115,6 +117,8 @@ header .stuff form {
 header .stuff form input {
     width: 40%;
     height: 6%;
+    color: #fff;
+    font-size: 1.4rem;
     background-color: transparent;
     border-bottom: 2px solid rgb(186, 186, 186);
 }
@@ -139,7 +143,7 @@ header #search-icon {
     font-size: 1.3rem;
 }
 header section.main {
-    width: 100%;
+    width: 98vw;
     height: auto;
     display: flex;
     overflow-x: scroll;
@@ -170,6 +174,9 @@ header section.main section.one .text h3 {
 }
 header section.main section.one .text h1{
     font-size: 2.2rem;
+}
+header section.main section.one .text p {
+    padding-right: 20px;
 }
 header section.main section.one .text button {
     padding: 11px 40px;
@@ -247,7 +254,7 @@ main section.dishes .dish {
 }
 main section.dishes .dish section {
     width: 90%;
-    max-width: 333px;
+    min-width: 300px;
     height: 400px;
     background-color: #fff;
     border-radius: 10px;
@@ -414,6 +421,11 @@ main section.menu {
     padding-bottom: 10px;
 }
 main section.menu .captions {
+    margin: 0 auto;
+    width: 90%;
+    height: auto;
+}
+main section.menu .captions .items{
     width: 85%;
     min-height: 400px;
     margin: 0 auto;
@@ -425,20 +437,23 @@ main section.menu .captions {
     margin-top: 10px;
     margin-bottom: 10px;
 }
-main section.menu .captions .hover {
+main section.menu .captions .items .hover {
     position: absolute;
     width: 85%;
     height: 30%;
     padding: 10px;
 }
-main section.menu .captions .hover a {
-    padding: 5vw;
+main section.menu .captions .items .hover a {
+    padding: 10px;
     border-radius: 50%;
     background-color: #fff;
     color: var(--black);
     float: right;
     transition: .75s;
     font-size: 1.2rem;
+}
+main section.menu .captions .items:hover  a {
+    background-color: var(--green);
 }
 main section.menu .captions .item-1{
     width: 100%;
@@ -596,6 +611,7 @@ main section.reviews .container div.item-2 .text div.only p {
 main section.order {
     background-color: var(--normal);
     width: 100%;
+    padding-bottom: 10px;
 }
 main section.order form{
     width: 90%;
@@ -632,7 +648,168 @@ main section.order form button:hover {
 footer {
     background-color: var(--normal);
     width: 100vw;
-    height: 100vh;
+    height: auto;
+}
+footer .main {
+    height: 80vh;
+    width: 100%;
+    background-color: #fff;
+}
+footer .main .item {
+    width: 95%;
+    height: auto;
+    margin: 0 auto;
+    color: var(--black);
+}
+footer .main .item h1 {
+    margin-bottom: 10px;
+}
+footer .main .item p, footer .main .item ul li {
+    margin-bottom: 15px;
+}
+footer .main .item ul li a {
+    color: var(--black);
+}
+footer .main section.copy {
+    background-color: transparent;
+    width: 100%;
+    height: 10vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+footer .main section.copy hr {
+    width: 80%;
+    height: 4px;
+    background-color: var(--normal);
+    margin-bottom: 3vw;
+}
+footer .main section.copy p span {
+    color: var(--green);
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+@media screen and (min-width: 600px){
+    header section.main {
+        overflow: hidden;
+        padding-bottom: 10px;
+    }
+    header section.main section.one {
+        display: flex;
+        align-items: flex-start;
+        flex-direction: row;
+    }
+    header section.main section.one .text {
+        padding-left: 5vw;
+        height: 20%;
+    }
+    header section.main section.one{
+        width: 50%;
+        height: 100%;
+    }
+    header section.main section.one .text{
+        align-items: flex-start;
+        justify-content: center;
+        height: 40vw;
+    }
+    header section.main section.one .text h3 {
+        color: var(--green);
+        font-size: 1.4rem;
+    }
+    header section.main section.one .text h1{
+        font-size: 2.4rem;
+    } 
+    main section.dishes .dish {
+        width: 100%;
+        height: auto;
+        display: grid;
+        grid-template-columns: repeat(2, minmax(200px,400px));
+        grid-template-rows: repeat(2, 400px);
+        justify-content: center;
+        align-items: start;
+        padding: 20px;
+        padding-bottom: 40px;
+        grid-gap: 10px;
+    }
+    main section.dishes .dish section {
+        width: 100%;
+        height: 100%;
+    }
+    main section.dishes .dish section .item-2 div section {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    main section.about .content {
+        display: flex;
+        padding-left: 20px;
+    }
+    main section.about .content div.img {
+        width: 40%;
+    }
+    main section.about .content div.txt {
+        width: 50%;
+    }
+    main section.about .content div.txt h1 {
+        font-size: 1.4rem;
+    }
+    main section.about .content .txt .grid {
+        max-width: 90%;
+        height: 50px;
+        margin-bottom: 10px;
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        grid-template-rows: 1fr;
+        grid-gap: 10px;
+    }
+    main section.about .content .txt .grid .item-3 {
+        grid-column: span 1;
+    }
+    main section.about .content .img {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    main section.about .content .img img{
+        height: 300px;
+        width: 300px;
+    }
+    main section.menu .captions {
+        display: grid;
+        justify-content: center;
+        align-items: center;
+        grid-template-columns: repeat(2, minmax(250px,450px));
+        grid-template-rows: repeat(2, minmax(250px,450px));
+        grid-gap: 10px;
+        padding-bottom: 20px;
+    }
+    main section.menu .captions .items {
+        width: 100%;
+        height: 100%;
+    }
+    main section.reviews .container div.item-2 .text {
+        min-width: 422px;
+        min-height: 344px;
+    }
+    main section.reviews .container div.item-2 .text div.pics div.one img {
+        max-width: 120.8px;
+        max-height: 120.8px;
+    }
+    main section.reviews .container div.item-2 .sign p {
+        font-size: 104.66px;
+    }
 }
 
 
@@ -668,5 +845,32 @@ footer {
     }
     header .nav .icons #menu {
         display: none;
+    }
+    header section.main section.one .text h3 {
+        color: var(--green);
+        font-size: 1.8rem;
+    }
+    header section.main section.one .text h1{
+        font-size: 3.4rem;
+    } 
+    header section.main section.one .pics {
+        display: flex;
+        flex-direction: column;
+        align-items:  center;
+    }
+    header section.main section.one .pics img{
+        max-height: 700px;
+        max-width: 700px;
+    }
+    main section.dishes .dish {
+        grid-template-columns: repeat(3, minmax(200px,400px));
+    }
+    main section.menu .captions {
+        grid-template-columns: repeat(3, minmax(200px,400px));
+        grid-template-rows: repeat(3, minmax(200px,400px));
+    }
+    
+    main section.menu .captions .item-2 .section-2 button {
+        margin-top: 0px;
     }
 }
