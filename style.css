@@ -629,10 +629,15 @@ main section.order form input {
     padding: 5px;
     border-radius: 5px;
 }
+main section.order form input:focus, main section.order form textarea:focus {
+    border: 2px solid var(--green);
+}
 main section.order form textarea {
     width: 100%;
+    resize: none;
     background-color: var(--normal);
     border-radius: 5px;
+    margin-bottom: 4px;
 }
 main section.order form button {
     padding: 11px 40px;
@@ -651,15 +656,19 @@ footer {
     height: auto;
 }
 footer .main {
-    height: 80vh;
+    margin-top: 20px;
+    height: 83vh;
     width: 100%;
     background-color: #fff;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
 }
 footer .main .item {
-    width: 95%;
-    height: auto;
-    margin: 0 auto;
+    width: 200px;
     color: var(--black);
+    text-align: center;
 }
 footer .main .item h1 {
     margin-bottom: 10px;
@@ -678,6 +687,8 @@ footer .main section.copy {
     justify-content: center;
     align-items: center;
     flex-direction: column;
+    padding-bottom: 20px;
+    font-size: 1rem;
 }
 footer .main section.copy hr {
     width: 80%;
@@ -687,6 +698,10 @@ footer .main section.copy hr {
 }
 footer .main section.copy p span {
     color: var(--green);
+}
+
+footer section.main > div p {
+    text-transform: lowercase;
 }
 
 
@@ -810,12 +825,25 @@ footer .main section.copy p span {
     main section.reviews .container div.item-2 .sign p {
         font-size: 104.66px;
     }
+    main section.order form {
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+    }
+    main section.order form input {
+        height: 50px;
+    }
+    main section.order form div {
+        display: flex;
+        justify-content: space-between;
+        width: 100%;
+    }
+    main section.order form div div {
+        width: 48%;
+        display: flex;
+        flex-direction: column;
+    }
 }
-
-
-
-
-
 
 
 
@@ -872,5 +900,26 @@ footer .main section.copy p span {
     
     main section.menu .captions .item-2 .section-2 button {
         margin-top: 0px;
+    }
+    footer {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        background-color: #fff;
+    }
+    footer section.main {
+        border: 2px solid red;
+        width: 80%;
+        display: grid;
+        grid-template-columns: repeat(4, 1fr);
+        grid-template-rows: repeat(2, 400px);
+    }
+    footer section.main > div {
+        padding-top: 30px;
+        border: 2px solid black;
+    }
+    footer section.main .copy {
+        width: 100%;
+        grid-column: span 4;
     }
 }
