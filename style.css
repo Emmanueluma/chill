@@ -20,7 +20,7 @@
     --normal: rgba(0,0,0,.1);
 }
 body{
-    background-color: #fff;
+    background-color: #f00;
 }
 header .nav {
     position: fixed;
@@ -658,7 +658,7 @@ main section.order form button:hover {
 }
 footer {
     background-color: var(--normal);
-    width: 100vw;
+    width: 100%;
     height: auto;
 }
 footer .main {
