@@ -9,6 +9,8 @@
     text-transform: capitalize;
     transition: all .2s linear;
     list-style: none;
+    scroll-behavior: smooth;
+    scroll-margin-top: 15.5rem;
 }
 :root{
     --green:#27ae60;
@@ -18,7 +20,6 @@
     --normal: rgba(0,0,0,.1);
 }
 body{
-    scroll-behavior: smooth;
     background-color: #fff;
 }
 header .nav {
@@ -205,12 +206,12 @@ header section.main section.one .pics div.place {
     align-items: center;
 }
 header section.main section.one .pics div.place div.container {
+    position: relative;
     width: 60px;
     height: 100%;
     display: flex;
     justify-content: space-between;
     align-items: center;
-
 }
 header section.main section.one .pics div.place div.container div {
     width: 8px;
@@ -362,6 +363,7 @@ main section.about .content .img img {
 }
 main section.about .content .txt {
     padding: 0 20px;
+    text-transform: lowercase;
 }
 main section.about .content .txt h1 {
     font-size: 1.8rem;
@@ -405,14 +407,18 @@ main section.about .content .txt .grid .item i {
 main section.about .content .txt button {
     padding: 11px 40px;
     background-color: var(--black);
-    color: #fff;
     border-radius: 5px;
     margin-bottom: 10px;
 }
+main section.about .content .txt button a {
+    color: #fff;
+}
 main section.about .content .txt button:hover {
     background-color: var(--green);
-    color: var(--black);
     font-weight: 600;
+}
+main section.about .content .txt button:hover a {
+    color: var(--black);
 }
 main section.menu {
     width: 100%;
