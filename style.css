@@ -20,7 +20,7 @@
     --normal: rgba(0,0,0,.1);
 }
 body{
-    background-color: #f00;
+    background-color: #fff;
 }
 header .nav {
     position: fixed;
