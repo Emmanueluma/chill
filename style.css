@@ -685,6 +685,12 @@ footer .main .item p, footer .main .item ul li {
 footer .main .item ul li a {
     color: var(--black);
 }
+footer i {
+    color: var(--green);
+}
+footer .main .item ul li a:hover {
+    text-decoration: underline;
+}
 footer .main section.copy {
     background-color: transparent;
     width: 100%;
