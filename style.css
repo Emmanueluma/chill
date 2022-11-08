@@ -644,6 +644,7 @@ main section.order form textarea {
     background-color: var(--normal);
     border-radius: 5px;
     margin-bottom: 4px;
+    padding: 5px;
 }
 main section.order form button {
     padding: 11px 40px;
@@ -715,16 +716,6 @@ footer .main section.copy p span {
 footer section.main > div p {
     text-transform: lowercase;
 }
-
-
-
-
-
-
-
-
-
-
 
 
 
@@ -856,12 +847,6 @@ footer section.main > div p {
         flex-direction: column;
     }
 }
-
-
-
-
-
-
 
 
 
