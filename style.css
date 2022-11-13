@@ -236,6 +236,7 @@ main section .headers {
     align-items: center;
     justify-content: center;
     flex-direction: column;
+    padding: 1rem 0 0.5rem 0;
 }
 main section .headers h2{
     font-size: 1.8rem;
