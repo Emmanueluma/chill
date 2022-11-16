@@ -149,6 +149,10 @@ header section.main {
     display: flex;
     overflow-x: scroll;
     overflow-y: scroll;
+    scroll-snap-type: x mandatory;
+}
+header section.main section {
+    scroll-snap-align: center;
 }
 header section.main section.one {
     min-width: 100vw;
