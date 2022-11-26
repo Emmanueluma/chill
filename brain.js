@@ -27,15 +27,28 @@ let nav = (function () {
 
     menuBar.addEventListener('click', e => {
         if (minMenu.style.height == '50vh') {
+            menuBar.classList.add('fa-bars');
+            menuBar.classList.remove('fa-times');
             minMenu.style.height = '0vh';
             for (let i = 0; i < links.length; i++) {
                 links[i].style.display = "none";
             }
         }else {
+            menuBar.classList.add('fa-times');
+            menuBar.classList.remove('fa-bars');
             minMenu.style.height = '50vh';
             for (let i = 5; i => links.length; i--) {
                 if(i == -1) {break;}
                 links[i].style.display = "inline";
+                links[i].addEventListener('click', e => {
+                    menuBar.classList.add('fa-bars');
+                    menuBar.classList.remove('fa-times');
+                    minMenu.style.height = '0vh';
+                    minMenu.style.height = '0vh';
+                    for (let i = 0; i < links.length; i++) {
+                        links[i].style.display = "none";
+                    }
+                });
             }
         }
     })
