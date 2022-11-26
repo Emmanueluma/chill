@@ -467,7 +467,7 @@ main section.menu .captions .items .hover i {
     font-size: 1.2rem;
 }
 main section.menu .captions .items:hover  i {
-    background-color: var(--green);
+    background-color: #c3ffdc;
 }
 main section.menu .captions .item-1{
     width: 100%;
